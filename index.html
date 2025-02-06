@@ -79,27 +79,64 @@
 
     <nav>
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">关于</a></li>
-            <li><a href="#">联系</a></li>
+            <li><a href="#" data-page="home">首页</a></li>
+            <li><a href="#" data-page="about">关于</a></li>
+            <li><a href="#" data-page="tools">工具</a></li>
+            <li><a href="#" data-page="contact">联系</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <article class="blog-post">
-            <h2>我的第一篇文章</h2>
-            <p class="post-date">2023年10月1日</p>
-            <p>这是我的第一篇博客文章，这里可以写一些有趣的内容...</p>
-            <a href="#">阅读更多</a>
-        </article>
+    <div class="container" id="content">
 
-        <article class="blog-post">
-            <h2>技术学习心得</h2>
-            <p class="post-date">2023年9月28日</p>
-            <p>最近在学习前端开发，发现HTML和CSS非常有趣...</p>
-            <a href="#">阅读更多</a>
-        </article>
     </div>
+
+    <script>
+        // 定义页面内容
+        const pages = {
+            home: `
+            <div class="container" id="content">
+                    <article class="blog-post">
+                        <h2>我的文章</h2>
+                        <p class="post-date">2025年02月06日</p>
+                        <a href="#">阅读更多</a>
+                    </article>
+                    <article class="blog-post">
+                        <h2>我的技术学习心得</h2>
+                        <p class="post-date">2025年02月06日</p>
+                        <a href="#">阅读更多</a>
+                    </article>
+            </div>
+            `,
+            about: `
+                <h2>关于</h2>
+                <p>个人小站</p>
+            `,
+            contact: `
+                <p>邮箱：912935853@qq.com</p>
+            `,
+            tools: `
+                <h2>工具推荐</h2>
+                <br></br>
+                <p>video timing计算的网址工具推荐：<\p>
+                <a href = https://tomverbeure.github.io/video_timings_calculator> https://tomverbeure.github.io/video_timings_calculator </a>
+                <br></br>
+                <p>CRC计算多项式code生成网址工具推荐：<\p>
+                <a href = http://outputlogic.com/?page_id=321>http://outputlogic.com/?page_id=321 </a>
+            `
+        };
+    
+        // 加载默认页面
+        document.getElementById('content').innerHTML = pages.home;
+    
+        // 监听导航菜单点击事件
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // 阻止默认跳转行为
+                const page = link.getAttribute('data-page'); // 获取链接文本（如“首页”）
+                document.getElementById('content').innerHTML = pages[page]; // 更新内容
+            });
+        });
+    </script>
 
     <footer>
         <p>&copy; 2025 我的博客 保留所有权利</p>
