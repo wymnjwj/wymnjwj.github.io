@@ -96,6 +96,12 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
+        .live2d {
+                position: fixed;
+                bottom : 0;
+                left : 0;
+            }
+
         .post-date {
             color: #666;
             font-size: 0.9rem;
@@ -161,6 +167,7 @@
 </div>
 
 <script src="script/all_post.js"></script>
+<canvas class="live2d" id="live2d" width="300" height="300"></canvas>
 </body>
 
 <footer>
@@ -179,10 +186,8 @@
     });
 </script>
 <script src="script/snow.js"></script>
-<canvas class="live2d" id="live2d" width="300" height="800"></canvas>
 <script src="live_2d/js/live2d.js"></script>
-<script src="live_2d/js/LAppDefine.js"></script>
 <script>
-    loadlive2d("live2d", "live_2d/model/22/model.default.json")
+    loadlive2d("live2d", "https://wymnjwj.github.io/live_2d/model/Pio/model1.json")
 </script>
 </html>
