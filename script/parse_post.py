@@ -33,7 +33,7 @@ def parse_all_post(path, o_f):
 
   for ii in range(i):
     if(ii==0):
-      o_file.writelines("document.write(\"<aside>\")\n")
+      o_file.writelines("document.write(\"<aside id = \\\"post_nav\\\">\")\n")
       o_file.writelines("document.write(\"  <ul class=\\\"text-margin-tl\\\"><a href=\\\"#\\\", style=\\\"margin-right:4rem\\\" >"+ post_list[ii][1]+"</a></ul>\");\n")
     elif (ii==i-1):
       o_file.writelines("document.write(\"  <ul class=\\\"text-margin-bl\\\"><a href=\\\"#\\\" , style=\\\"margin-right:4rem\\\">"+post_list[ii][1]+"</a></ul>\");\n")

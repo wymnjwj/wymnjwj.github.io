@@ -1,6 +1,6 @@
-document.write("<aside>")
+document.write("<aside id = \"post_nav\">")
 document.write("  <ul class=\"text-margin-tl\"><a href=\"#\", style=\"margin-right:4rem\" >git操作</a></ul>");
-document.write("  <ul class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >我的测试0</a></ul>");
+document.write("  <ul class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >前端html&js相关记录</a></ul>");
 document.write("  <ul class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >我的测试1</a></ul>");
 document.write("  <ul class=\"text-margin-bl\"><a href=\"#\" , style=\"margin-right:4rem\">我的测试2</a></ul>");
 document.write("</aside>")
@@ -9,7 +9,7 @@ document.write("    <h2>git操作</h2>                 ");
 document.write("    <p class=\"post-date\">2025年2月6日</p>  ");
 document.write("</article>                                     ");
 document.write("<article class=\"blog-post\">                    ");
-document.write("    <h2>我的测试0</h2>                 ");
+document.write("    <h2>前端html&js相关记录</h2>                 ");
 document.write("    <p class=\"post-date\">2025年2月7日</p>  ");
 document.write("</article>                                     ");
 document.write("<article class=\"blog-post\">                    ");
