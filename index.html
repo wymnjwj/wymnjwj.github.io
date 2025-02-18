@@ -167,14 +167,18 @@
 </div>
 
 <script src="script/all_post.js"></script>
-<canvas class="live2d" id="live2d" width="300" height="300"></canvas>
-</body>
-
-<footer>
-    <p>&copy; 2025 我的博客 保留所有权利</p>
-</footer>
 
 <script>
+    window.addEventListener("load",function(){
+        var post_nav = document.getElementById("post_nav");
+        if(post_nav.clientWidth < 150){
+            post_nav.style.visibility = "hidden";
+        }
+        else {
+            post_nav.style.visibility = "visible";
+        }
+    });
+
     window.addEventListener("resize",function(){
         var post_nav = document.getElementById("post_nav");
         if(post_nav.clientWidth < 150){
@@ -185,6 +189,13 @@
         }
     });
 </script>
+
+<canvas class="live2d" id="live2d" width="300" height="300"></canvas>
+</body>
+
+<footer>
+    <p>&copy; 2025 我的博客 保留所有权利</p>
+</footer>
 <script src="script/snow.js"></script>
 <script src="live_2d/js/live2d.js"></script>
 <script>
