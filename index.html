@@ -169,17 +169,28 @@
 <script src="script/all_post.js"></script>
 
 <script>
-    window.addEventListener("load",function(){
-        var post_nav = document.getElementById("post_nav");
-        if(post_nav.clientWidth < 150){
-            post_nav.style.visibility = "hidden";
-        }
-        else {
-            post_nav.style.visibility = "visible";
-        }
-    });
+    let post_elements = document.getElementsByTagName("article");
+    for (let i = 0; i < post_elements.length; i++){
+        let content=document.getElementById('post_content_'+i)
+        let content_nav = document.getElementById('post_nav_'+i)
+        post_elements[i].addEventListener("click",f_display);
+        content_nav.addEventListener("click",f_display);
+        function f_display(){
+            if(content.style.display == "none"){
+                content.style.display = "block";
+            }
+            else {
+                content.style.display = "none";
+            }
+        };
+    }
+</script>
 
-    window.addEventListener("resize",function(){
+<script>
+    post_nav_display();
+    window.addEventListener("resize",post_nav_display);
+    function post_nav_display()
+    {
         var post_nav = document.getElementById("post_nav");
         if(post_nav.clientWidth < 150){
             post_nav.style.visibility = "hidden";
@@ -187,7 +198,7 @@
         else {
             post_nav.style.visibility = "visible";
         }
-    });
+    }
 </script>
 
 <canvas class="live2d" id="live2d" width="300" height="300"></canvas>
