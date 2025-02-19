@@ -1,8 +1,9 @@
 document.write("<aside id = \"post_nav\">")
 document.write("  <ul id=\"post_nav_0\" class=\"text-margin-tl\"><a href=\"#\", style=\"margin-right:4rem\" >git操作</a></ul>");
-document.write("  <ul id=\"post_nav_1\" class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >我的测试0</a></ul>");
-document.write("  <ul id=\"post_nav_2\" class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >我的测试1</a></ul>");
-document.write("  <ul id=\"post_nav_3\" class=\"text-margin-bl\"><a href=\"#\" , style=\"margin-right:4rem\">我的测试2</a></ul>");
+document.write("  <ul id=\"post_nav_1\" class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >前端html&js相关记录</a></ul>");
+document.write("  <ul id=\"post_nav_2\" class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >我的测试0</a></ul>");
+document.write("  <ul id=\"post_nav_3\" class=\"text-margin-l\"><a href=\"#\" , style=\"margin-right:4rem\" >我的测试1</a></ul>");
+document.write("  <ul id=\"post_nav_4\" class=\"text-margin-bl\"><a href=\"#\" , style=\"margin-right:4rem\">我的测试2</a></ul>");
 document.write("</aside>")
 document.write("<article class=\"blog-post\" id=\"post_0\">");
 document.write("    <h2>git操作</h2>");
@@ -19,23 +20,29 @@ document.write('<p>6、稍等后完成，可以通过 ssh -vT git@github.com 来
 document.write("</div>");
 document.write("</article>");
 document.write("<article class=\"blog-post\" id=\"post_1\">");
-document.write("    <h2>我的测试0</h2>");
+document.write("    <h2>前端html&js相关记录</h2>");
 document.write("    <p class=\"post-date\">2025年02月17日</p>");
 document.write("<div id=\"post_content_1\" style=\"display:none\" >");
-document.write('<p>test</p>');
 document.write("</div>");
 document.write("</article>");
 document.write("<article class=\"blog-post\" id=\"post_2\">");
-document.write("    <h2>我的测试1</h2>");
+document.write("    <h2>我的测试0</h2>");
 document.write("    <p class=\"post-date\">2025年02月17日</p>");
 document.write("<div id=\"post_content_2\" style=\"display:none\" >");
 document.write('<p>test</p>');
 document.write("</div>");
 document.write("</article>");
 document.write("<article class=\"blog-post\" id=\"post_3\">");
-document.write("    <h2>我的测试2</h2>");
+document.write("    <h2>我的测试1</h2>");
 document.write("    <p class=\"post-date\">2025年02月17日</p>");
 document.write("<div id=\"post_content_3\" style=\"display:none\" >");
+document.write('<p>test</p>');
+document.write("</div>");
+document.write("</article>");
+document.write("<article class=\"blog-post\" id=\"post_4\">");
+document.write("    <h2>我的测试2</h2>");
+document.write("    <p class=\"post-date\">2025年02月17日</p>");
+document.write("<div id=\"post_content_4\" style=\"display:none\" >");
 document.write('<p>test</p>');
 document.write("</div>");
 document.write("</article>");
