@@ -56,6 +56,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgb(255, 255, 255);
             max-width: 10%;
+            position: fixed;
         }
 
         .text-margin-l{
@@ -117,6 +118,11 @@
             text-decoration: none;
         }
 
+        pre{
+            background-color: #333;
+            color:white;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -169,6 +175,20 @@
 <script src="script/all_post.js"></script>
 
 <script>
+    //for post nav
+    post_nav_display();
+    window.addEventListener("resize",post_nav_display);
+    function post_nav_display()
+    {
+        var post_nav = document.getElementById("post_nav");
+        if(post_nav.clientWidth < 150){
+            post_nav.style.visibility = "hidden";
+        }
+        else {
+            post_nav.style.visibility = "visible";
+        }
+    }
+    //for post content
     let post_elements = document.getElementsByTagName("article");
     for (let i = 0; i < post_elements.length; i++){
         let content=document.getElementById('post_content_'+i)
@@ -186,22 +206,7 @@
     }
 </script>
 
-<script>
-    post_nav_display();
-    window.addEventListener("resize",post_nav_display);
-    function post_nav_display()
-    {
-        var post_nav = document.getElementById("post_nav");
-        if(post_nav.clientWidth < 150){
-            post_nav.style.visibility = "hidden";
-        }
-        else {
-            post_nav.style.visibility = "visible";
-        }
-    }
-</script>
-
-<canvas class="live2d" id="live2d" width="300" height="300"></canvas>
+<canvas class="live2d" id="live2d" width="300" height="300" style="position: fixed;"></canvas>
 </body>
 
 <footer>

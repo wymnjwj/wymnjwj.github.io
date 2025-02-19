@@ -57,6 +57,8 @@ def parse_all_post(path, o_f):
       tmp_file = open(tmp_str,'r',encoding='utf-8')
       for line in tmp_file.readlines():
         tmp_html = markdown.markdown(line)
+        if tmp_html.startswith('<p>```'):
+          continue
         if tmp_html :
           o_file.writelines("document.write("+repr(tmp_html)+");\n")
       o_file.writelines("document.write(\"</div>\");\n")
