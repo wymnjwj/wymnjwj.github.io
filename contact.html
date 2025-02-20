@@ -15,18 +15,25 @@
 
         body {
             line-height: 1.6;
-            background-image: url("src/background.jpg");
+            user-select: none;
+            background-image: url("src/body_back.jpg");
+            background-repeat: repeat-y;
+            background-position: top;
+            background: size 1920px,300px;
         }
 
         header {
-            background-color: #727272;
-            color: white;
+            background-position: center;
+            background-image: url("src/background.jpg");
+            background-repeat: no-repeat;
+            background: size 100%;
             text-align: center;
+            float: top;
             padding: 2rem;
         }
 
         nav {
-            background-color: #80bef8;
+            background-color: #ff8c8c;
             padding: 1rem;
         }
 
@@ -81,11 +88,11 @@
             margin: 0 auto;
             padding: 2rem;
             border-radius: 5px;
-            background-color:white;
+            background-color: rgba(255, 255, 255, 0.6);
         }
 
         .blog-post {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.212);
             padding: 1rem;
             margin-left: 14rem;
             margin-right: 14rem;
