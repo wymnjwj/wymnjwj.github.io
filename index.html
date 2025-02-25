@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>崖野苦乐的个人小站</title>
     <link rel="stylesheet" href="css/blog.css"></link>
+    <!--markdown公式支持-->
+    <script>MathJax={tex:{inlineMath: [["$","$"],["\\(","\\)"]]}};</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
-
     <script>
         document.addEventListener('keydown', function(e) {
             // 禁用 Ctrl+C（复制）
@@ -26,10 +28,8 @@
             //}
         });
     </script>
-
-
 <header>
-    <h1>欢迎来到我的博客</h1>
+    <h1>欢迎来到崖野苦乐的个人小站</h1>
     <p>分享知识与见解</p>
 </header>
 
@@ -45,7 +45,9 @@
 <div class="container" id="content">
 </div>
 
-<script src="script/all_post.js"></script>
+<script src="script/all_post.js">
+    MathJax.typeset();
+</script>
 
 <script>
     //for post nav
