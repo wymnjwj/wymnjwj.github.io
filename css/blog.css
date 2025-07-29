@@ -94,6 +94,8 @@ aside {
     margin-bottom: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    word-break:break-all; 
+    white-space: pre-wrap;
 }
 
 .live2d {
@@ -105,6 +107,8 @@ aside {
 .post-date {
     color: #666;
     font-size: 0.9rem;
+    word-break:break-all; 
+    white-space: pre-wrap;
 }
 
 a {
